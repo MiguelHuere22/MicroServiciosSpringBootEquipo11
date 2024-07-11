@@ -10,7 +10,7 @@ public interface PeopleService {
     People getPersonaById(Long id);
     People createPersona(People persona);
     People updatePersona(Long id, People personaDetails);
-    void deletePersona(Long id);
-    List<People> findByIdUbigeo(Long idUbigeo);
+    void deletePersona(Long  id);
+    List<People> findByIdUbigeo(Long  idUbigeo);
     UbigeoWithPeopleResponse getUbigeoWithPersonas(Long idUbigeo);
 }
