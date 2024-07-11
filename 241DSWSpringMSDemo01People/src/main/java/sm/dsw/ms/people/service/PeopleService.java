@@ -2,6 +2,7 @@ package sm.dsw.ms.people.service;
 
 import sm.dsw.ms.people.dto.UbigeoWithPeopleResponse;
 import sm.dsw.ms.people.model.People;
+
 import java.util.List;
 
 public interface PeopleService {

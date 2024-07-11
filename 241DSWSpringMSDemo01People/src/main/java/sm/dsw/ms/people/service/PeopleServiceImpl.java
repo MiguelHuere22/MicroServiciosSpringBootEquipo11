@@ -64,8 +64,10 @@ public class PeopleServiceImpl implements PeopleService {
     public UbigeoWithPeopleResponse getUbigeoWithPersonas(Long idUbigeo) {
         String url = ubigeoServiceUrl + "/" + idUbigeo;
         UbigeoWithPeopleResponse ubigeo = restTemplate.getForObject(url, UbigeoWithPeopleResponse.class);
-        List<People> personas = peopleRepository.findByIdUbigeo(idUbigeo);
-        ubigeo.setPersonas(personas);
+        if (ubigeo != null) {
+            List<People> personas = peopleRepository.findByIdUbigeo(idUbigeo);
+            ubigeo.setPersonas(personas);
+        }
         return ubigeo;
     }
 }

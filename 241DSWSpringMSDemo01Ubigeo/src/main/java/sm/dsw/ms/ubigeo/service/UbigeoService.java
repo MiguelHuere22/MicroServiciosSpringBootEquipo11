@@ -1,6 +1,7 @@
 package sm.dsw.ms.ubigeo.service;
 
 import sm.dsw.ms.ubigeo.model.Ubigeo;
+
 import java.util.List;
 
 public interface UbigeoService {
